@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "hungryit.rpg.dragons.templatemod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "TemplateMod.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
