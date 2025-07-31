@@ -2,6 +2,7 @@ package xyz.hungryit.rpg.dragons.dimensionfracture;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import xyz.hungryit.rpg.dragons.dimensionfracture.item.ModItems;
 
 @Mod(DimensionFracture.MOD_ID)
 public class DimensionFracture {
@@ -23,6 +25,8 @@ public class DimensionFracture {
 
     public DimensionFracture() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -37,7 +41,9 @@ public class DimensionFracture {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.REALITY_CRYSTAL);
+        }
     }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
