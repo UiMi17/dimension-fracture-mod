@@ -1,5 +1,8 @@
 {
-  "item.dimensionfracture.reality_crystal" : "Кристал реальності",
-  "item.dimensionfracture.reality_shard" : "Уламок реальності",
-  "block.dimensionfracture.ancient_altar" : "Стародавній вівтар"
+  "item.dimensionfracture.reality_crystal" : "Кристал Реальності",
+  "item.dimensionfracture.reality_shard" : "Уламок Реальності",
+
+  "block.dimensionfracture.ancient_altar" : "Стародавній Вівтар",
+  "block.dimensionfracture.nether_reality_shard_ore" : "Руда Уламків Реальності Незеру",
+  "block.dimensionfracture.end_stone_reality_shard_ore" : "Руда Уламків Реальності Енду"
 }

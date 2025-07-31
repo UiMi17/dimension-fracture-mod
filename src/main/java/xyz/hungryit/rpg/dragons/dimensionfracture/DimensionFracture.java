@@ -49,6 +49,8 @@ public class DimensionFracture {
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.ANCIENT_ALTAR);
+            event.accept(ModBlocks.NETHER_REALITY_SHARD_ORE);
+            event.accept(ModBlocks.END_STONE_REALITY_SHARD_ORE);
         }
     }
     @SubscribeEvent
