@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> REALITY_CRYSTAL = ITEMS.register("reality_crystal",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> REALITY_SHARD = ITEMS.register("reality_shard",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

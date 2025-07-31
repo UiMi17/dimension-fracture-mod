@@ -1,0 +1,8 @@
+{
+  "item.dimensionfracture.reality_crystal" : "Reality Crystal",
+  "item.dimensionfracture.reality_shard" : "Reality Shard",
+
+  "block.dimensionfracture.ancient_altar" : "Ancient Altar",
+  "block.dimensionfracture.nether_reality_shard_ore" : "Nether Reality Shard Ore",
+  "block.dimensionfracture.end_stone_reality_shard_ore" : "End Stone Reality Shard Ore"
+}

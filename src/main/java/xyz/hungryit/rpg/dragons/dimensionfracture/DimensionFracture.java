@@ -14,12 +14,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import xyz.hungryit.rpg.dragons.dimensionfracture.block.ModBlocks;
 import xyz.hungryit.rpg.dragons.dimensionfracture.item.ModItems;
 
 @Mod(DimensionFracture.MOD_ID)
 public class DimensionFracture {
 
-    public static final String MOD_ID = "dimensonfracture";
+    public static final String MOD_ID = "dimensionfracture";
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
@@ -27,6 +28,7 @@ public class DimensionFracture {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,6 +45,12 @@ public class DimensionFracture {
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.REALITY_CRYSTAL);
+            event.accept(ModItems.REALITY_SHARD);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ANCIENT_ALTAR);
+            event.accept(ModBlocks.NETHER_REALITY_SHARD_ORE);
+            event.accept(ModBlocks.END_STONE_REALITY_SHARD_ORE);
         }
     }
     @SubscribeEvent

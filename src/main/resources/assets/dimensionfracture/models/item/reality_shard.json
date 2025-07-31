@@ -1,6 +1,6 @@
 {
   "parent" : "item/generated",
   "textures" : {
-    "layer0" : "dimensonfracture:item/reality_crystal"
+    "layer0" : "dimensionfracture:item/reality_shard"
   }
 }
