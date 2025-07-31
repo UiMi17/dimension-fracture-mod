@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "hungryit.rpg.dragons.templatemod.mixin",
+  "package": "xyz.hungryit.rpg.dragons.dimensionfracture.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "TemplateMod.refmap.json",
   "mixins": [

@@ -1,4 +1,4 @@
-package hungryit.rpg.dragons.templatemod;
+package xyz.hungryit.rpg.dragons.dimensionfracture;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -14,14 +14,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(TemplateMod.MOD_ID)
-public class TemplateMod {
+@Mod(DimensionFracture.MOD_ID)
+public class DimensionFracture {
 
-    public static final String MOD_ID = "templatemod";
+    public static final String MOD_ID = "dimensonfracture";
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public TemplateMod() {
+    public DimensionFracture() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
