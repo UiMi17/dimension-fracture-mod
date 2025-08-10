@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import xyz.hungryit.rpg.dragons.dimensionfracture.DimensionFracture;
+import xyz.hungryit.rpg.dragons.dimensionfracture.block.custom.DirectionalBlock;
 import xyz.hungryit.rpg.dragons.dimensionfracture.item.ModItems;
 
 import java.util.function.Supplier;
@@ -20,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, DimensionFracture.MOD_ID);
 
     public static final RegistryObject<Block> ANCIENT_ALTAR = registerBlock("ancient_altar",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new DirectionalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final RegistryObject<Block> NETHER_REALITY_SHARD_ORE = registerBlock("nether_reality_shard_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).sound(SoundType.NETHER_GOLD_ORE)));
     public static final RegistryObject<Block> END_STONE_REALITY_SHARD_ORE = registerBlock("end_stone_reality_shard_ore",

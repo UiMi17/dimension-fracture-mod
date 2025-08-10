@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "dimensionfracture:block/ancient_altar"
+    },
+    "facing=south": {
+      "model": "dimensionfracture:block/ancient_altar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dimensionfracture:block/ancient_altar",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "dimensionfracture:block/ancient_altar",
+      "y": 90
     }
   }
 }
