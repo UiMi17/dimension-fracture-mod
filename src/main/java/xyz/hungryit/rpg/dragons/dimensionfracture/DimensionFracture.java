@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import xyz.hungryit.rpg.dragons.dimensionfracture.block.ModBlocks;
+import xyz.hungryit.rpg.dragons.dimensionfracture.item.ModCreativeModeTabs;
 import xyz.hungryit.rpg.dragons.dimensionfracture.item.ModItems;
 
 @Mod(DimensionFracture.MOD_ID)
@@ -24,9 +25,11 @@ public class DimensionFracture {
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
+
     public DimensionFracture() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
